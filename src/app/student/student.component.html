@@ -1,5 +1,10 @@
 <div class="tablepipe">
-    <table class="table">
+   <!-- pipe for date -->
+    <h3> Date: {{currentdate | date:'medium'}}</h3>
+
+
+    <table class="table ">
+       
       <thead>
         <tr>
           <th scope="col">RollNo</th>
@@ -15,15 +20,19 @@
       <tbody>
         <tr *ngFor="let student of students.stud">               
           <td>{{ student.RollNo }}</td>
-          <td>{{ student.Name | genderspecific: student.Gender }}</td>
+          <td><b>{{ student.Name | genderspecific: student.Gender }}</b></td>
           <td>{{ student.Gender }}</td>
           <td>{{ student.Age }}</td>
-          <td>{{ student.Location }}</td>
-          <td>{{ student.Phone }}</td>
-          <td>{{ student.State }}</td>
-          <td>{{ student.Marks }}</td>
+          <td>{{ student.Location  }}</td>
+          <td>{{ student.Phone| slice:0:10 }}</td>
+          <!-- uppercase pipe -->
+          <td>{{ student.State | uppercase }}</td>
+          <!-- percent pipe -->
+          <td><b>{{ student.Marks|percent }}</b></td>
         </tr>  
       </tbody>
     </table>
+<!-- currency pipe -->
+    <h5>Total Fee:  {{decimalNumber | currency:'INR':'symbol':'2.1-2'}}</h5>
   </div>
   

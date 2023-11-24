@@ -18,7 +18,7 @@ export class StudentComponent {
           "Location": "Thrissur",
           "Phone": "9876543210",
           "State": "Kerala",
-          "Marks": 92
+          "Marks": 0.6
         },
         {
           "RollNo": 2,
@@ -28,7 +28,7 @@ export class StudentComponent {
           "Location": "Ernakulam",
           "Phone": "8765432109",
           "State": "Kerala",
-          "Marks": 78
+          "Marks": 0.78
         },
         {
           "RollNo": 3,
@@ -38,7 +38,7 @@ export class StudentComponent {
           "Location": "Kozhikode",
           "Phone": "7654321098",
           "State": "Kerala",
-          "Marks": 85
+          "Marks": 0.84
         },
         {
           "RollNo": 4,
@@ -48,7 +48,7 @@ export class StudentComponent {
           "Location": "Thiruvananthapuram",
           "Phone": "6543210987",
           "State": "Kerala",
-          "Marks": 91
+          "Marks":  0.9
         },
         {
           "RollNo": 5,
@@ -58,7 +58,7 @@ export class StudentComponent {
           "Location": "Alappuzha",
           "Phone": "5432109876",
           "State": "Kerala",
-          "Marks": 79
+          "Marks": 0.92
         },
         {
           "RollNo": 6,
@@ -68,7 +68,7 @@ export class StudentComponent {
           "Location": "Kollam",
           "Phone": "4321098765",
           "State": "Kerala",
-          "Marks": 87
+          "Marks": 0.65
         },
         {
           "RollNo": 7,
@@ -78,7 +78,7 @@ export class StudentComponent {
           "Location": "Palakkad",
           "Phone": "3210987654",
           "State": "Kerala",
-          "Marks": 82
+          "Marks":0.2
         },
         {
           "RollNo": 8,
@@ -88,7 +88,7 @@ export class StudentComponent {
           "Location": "Idukki",
           "Phone": "2109876543",
           "State": "Kerala",
-          "Marks": 88
+          "Marks": 0.7
         },
         {
           "RollNo": 9,
@@ -98,7 +98,7 @@ export class StudentComponent {
           "Location": "Kannur",
           "Phone": "1098765432",
           "State": "Kerala",
-          "Marks": 95
+          "Marks": 0.85
         },
         {
           "RollNo": 10,
@@ -108,10 +108,17 @@ export class StudentComponent {
           "Location": "Pathanamthitta",
           "Phone": "0987654321",
           "State": "Kerala",
-          "Marks": 84
+          "Marks": 0.8
         }
       ]     
     
   }
+
+
+
+// pipe for date
+  public currentdate:Date= new Date();
+  // currency pipe
+  public decimalNumber:number= 7655.0865;
 
 }
