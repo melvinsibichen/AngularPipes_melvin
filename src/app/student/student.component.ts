@@ -114,11 +114,10 @@ export class StudentComponent {
     
   }
 
-
-
 // pipe for date
   public currentdate:Date= new Date();
   // currency pipe
-  public decimalNumber:number= 7655.0865;
+  public decimalNumber:number= 12500.0865;
+  public examfee:number= 550.056575;
 
 }

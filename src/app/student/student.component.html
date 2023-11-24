@@ -1,4 +1,5 @@
 <div class="tablepipe">
+  <h2 class="tablepipe__heading">Full Stack Batch</h2>
    <!--  date  pipe-->
     <h3> Date: {{currentdate | date:'medium'}}</h3>
 
@@ -36,6 +37,8 @@
       </tbody>
     </table>
 <!-- currency pipe -->
-    <h5>Total Fee:  {{decimalNumber | currency:'INR':'symbol':'2.1-2'}}</h5>
+    <h5>Course Fee:  {{decimalNumber | currency:'INR':'symbol':'2.1-2'}}</h5>
+    <h6>Exam Fee:  {{examfee | currency:'INR':'symbol':'2.1-2'}}</h6>
+    <button type="button" class="btn btn-success">Pay Now</button>
   </div>
   
