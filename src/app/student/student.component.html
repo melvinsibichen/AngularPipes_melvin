@@ -1,5 +1,5 @@
 <div class="tablepipe">
-   <!-- pipe for date -->
+   <!--  date  pipe-->
     <h3> Date: {{currentdate | date:'medium'}}</h3>
 
 
@@ -20,10 +20,13 @@
       <tbody>
         <tr *ngFor="let student of students.stud">               
           <td>{{ student.RollNo }}</td>
+          <!-- gendercustom pipe -->
           <td><b>{{ student.Name | genderspecific: student.Gender }}</b></td>
-          <td>{{ student.Gender }}</td>
+          <!-- lowercase pipe -->
+          <td>{{ student.Gender | lowercase  }}</td>
           <td>{{ student.Age }}</td>
           <td>{{ student.Location  }}</td>
+          <!-- slice pipe -->
           <td>{{ student.Phone| slice:0:10 }}</td>
           <!-- uppercase pipe -->
           <td>{{ student.State | uppercase }}</td>
